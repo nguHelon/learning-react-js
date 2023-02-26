@@ -1,24 +1,27 @@
 import React from "react";
-import person from "../images/person.jpg"
-
-const Props = () => {
-
+const Props = ({ setup, punchline, upvotes, downvotes, comments, bool }) => {
+    function isPun(bool) {
+        if (bool === true) {
+            return "true"
+        } else {
+            return "false";
+        }
+    }
     return (
-        <div className="card-item">
-            <div className="img">
-                <img src={person} alt="" />
+        <div>
+            {setup && <p>Setup : <span>{setup}</span></p>}
+            <p>Punchline : <span>{punchline}</span></p>
+            <p>upvotes: <span>{upvotes}</span></p>
+            <p>downvoteas: <span>{downvotes}</span></p>
+            <div>
+                <p>comments: </p>
+                <div>{
+                    comments.forEach((comment) => {
+                        return comment;
+                    })
+                }</div>
             </div>
-            <h3>Ngu Helon</h3>
-            <div className="card-info">
-                <div className="card-rating">
-                    <p>Phone: </p>
-                    <span>+237 82 75 14 41</span>
-                </div>
-                <div className="more-info">
-                    <p>Email: </p>
-                    <span>nguhelon@gmail.com</span>
-                </div>
-            </div>
+            <p>pun: <span>{isPun(bool)}</span></p>
         </div>
     )
 }

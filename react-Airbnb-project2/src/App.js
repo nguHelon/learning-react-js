@@ -15,20 +15,44 @@ const App = () => {
             </div>
             <div className="card-container">
                 <Props
-                    img="./images/person.jpg"
-                    name="Ngu helon"
+                    setup="I got my daughter a fridge for her anniversary"
+                    punchline="I can't wait to see her face light up when she opens it"
+                    upvotes={5}
+                    downvotes={8}
+                    comments={["yeah", "this", "is", "a", "comment"]}
+                    bool={true}
                 />
                 <Props
-                    img="./images/person1.jpg"
-                    name="John Doe"
+                    setup="How did the hacker escape the police?"
+                    punchline="He just ransomware"
+                    upvotes={5}
+                    downvotes={8}
+                    comments={["yeah", "this", "is", "a", "comment"]}
+                    bool={false}
                 />
                 <Props
-                    img="./images/person2.jpg"
-                    name="Mary smidler"
+                    setup="Why don't pirates travel on mountain roads?"
+                    punchline="Scurvy"
+                    upvotes={5}
+                    downvotes={8}
+                    comments={["yeah", "this", "is", "a", "comment"]}
+                    bool={true}
                 />
                 <Props
-                    img="./images/person3.jpg"
-                    name="anthony green"
+                    setup="Why do bees stay in the hive in the winter?"
+                    punchline="Swarm"
+                    upvotes={5}
+                    downvotes={8}
+                    comments={["yeah", "this", "is", "a", "comment"]}
+                    bool={false}
+                />
+                <Props
+                    setup="What's the best thing about switzerland"
+                    punchline="I don't know, but the flag is a big plus"
+                    upvotes={5}
+                    downvotes={8}
+                    comments={["yeah", "this", "is", "a", "comment"]}
+                    bool={true}
                 />
             </div>
         </div>
