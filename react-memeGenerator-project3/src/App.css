@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 50px;
+  background-color: gainsboro;
+}
+
+.meme-container {
+  width: 500px;
+  height: auto;
+  background: white;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    hsla(277, 74%, 24%, 1) 0%,
+    hsla(279, 64%, 50%, 1) 100%
+  );
+}
+
+.header h2 {
+  color: gainsboro;
+}
+
+.header p {
+  color: white;
+  font-size: 14px;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.form .inputs {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form .inputs input {
+  flex-basis: 48%;
+  outline: none;
+  border: 1px solid gray;
+  height: 35px;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+
+.form button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 11px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    hsla(277, 74%, 24%, 1) 0%,
+    hsla(279, 64%, 50%, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.form-div img {
+  max-width: 100%;
+}
