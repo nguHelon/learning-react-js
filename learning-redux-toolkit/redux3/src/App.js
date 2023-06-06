@@ -1,6 +1,10 @@
 import React from 'react'
+import store from './store'
 
 function App() {
+
+  store.dispatch({ type: 'todos/todoAdded', payload: 'Learn about actioins' })
+
   return (
     <div className="App">
       <nav>
