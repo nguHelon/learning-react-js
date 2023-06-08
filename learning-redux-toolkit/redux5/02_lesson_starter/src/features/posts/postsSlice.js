@@ -12,7 +12,7 @@ const initialState = [
             wow: 0,
             heart: 0,
             rocket: 0,
-            coffer: 0
+            coffee: 0
         }
     },
 
@@ -26,7 +26,7 @@ const initialState = [
             wow: 0,
             heart: 0,
             rocket: 0,
-            coffer: 0
+            coffee: 0
         }
     }
 ]
@@ -53,7 +53,7 @@ const postsSlice = createSlice({
                             wow: 0,
                             heart: 0,
                             rocket: 0,
-                            coffer: 0
+                            coffee: 0
                         }
                     }
                 }
