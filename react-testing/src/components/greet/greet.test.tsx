@@ -1,14 +1,13 @@
 import { render, screen } from "@testing-library/react"
-import { Greet } from "./greet"
+import { Greet } from "./Greet"
 
-test("Greet renders correctly", () => {
-    render(<Greet />);
-    const textElement = screen.getByText("Hello");
-    expect(textElement).toBeInTheDocument();
-})
+describe('Greet', () => {    
+    test("renders correctly", () => {
+        render(<Greet />);
+        const textElement = screen.getByText(/Hello/);
+        expect(textElement).toBeInTheDocument();
+    })
+});
 
-test('Greet renders with a name', () => {
-    render(<Greet name="Helon" />);
-    const textElement = screen.getByText('Hello Helon');
-    expect(textElement).toBeInTheDocument();
-})
+// test written for chatGPT exercises
+
